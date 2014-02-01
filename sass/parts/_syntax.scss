@@ -75,17 +75,19 @@ figure.code{
 	background: $pre-bg;
 	border: 1px solid $pre-border;
 	margin-top: 3px;
-    margin-bottom: 1.5em;
+	margin-bottom: 1.5em;
 	padding: 5px 15px;
 	@include border-radius(5px);
 	figcaption{
 		font-size: 0.9em;
 		position: relative;
+		text-align: right;
 		span{
-			margin: -5px -15px 0;
-			padding: 5px 15px;
-			display: none;
-			@include background(linear-gradient(top, $pre-border, $pre-bg));
+			color: #aaa;
+			// margin: -5px -15px 0;
+			// padding: 5px 15px;
+			// display: none;
+			// @include background(linear-gradient(top, $pre-border, $pre-bg));
 			&:empty{
 				display: none;
 			}
@@ -107,13 +109,13 @@ figure.code{
 		overflow-x: auto;
 	}
 	.line-numbers{
-        display: none;
+		display: none;
 		border-right: 1px solid $pre-border;
 		font-family: $font-mono;
 		padding-right: 15px;
 		text-align: right;
 	}
-    
+
 	table{
 		border: none;
 		text-align: left;
@@ -122,7 +124,7 @@ figure.code{
 			text-align: left;
 		}
 	}
-    
+
 	td.code{
 		width: 100%;
 		padding-left: 5px;
